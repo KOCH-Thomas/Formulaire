@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/style.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .gradiant {
+            background: linear-gradient(65deg, #16ace7, #c05ef9);
+          }
+        }
+      </style>
+</head>
+
+<body
+    class="bg-gray-100 min-h-screen m-0 p-0 box-border text-gray-600 flex items-center justify-center tracking-wider font-sans">
+
+    <form class="w-3/6 max-w-screen-sm grid grid-rows-4 rounded-md bg-white p-10 relative shadow-2xl box-border"
+        action="" method="">
+
+        <div class="email-container duration-100">
+            <label class="" for="email">Email</label>
+            <input class="text-gray-800" type="text" autocomplete="off" id="email">
+            <span class="mb-6 block text-sm text-red-400 opacity-0 invisible delay-100">Email incorrect</span>
+        </div>
+
+        <div class="password-container duration-100">
+            <label class="text-gray-800" for="password">Mot de passe</label>
+            <input type="password" autocomplete="off" id="password">
+            <p class="" id="progress-bar"></p>
+            <span class="mb-6 block text-sm text-red-400 opacity-0 invisible delay-100"></span>
+        </div>
+
+        <div class="confirm-container duration-100">
+            <label class="text-gray-800" for="confirm">Confirmer mot de passe</label>
+            <input type="password" autocomplete="off" id="confirm">
+            <span class="mb-6 block text-sm text-red-400 opacity-0 invisible delay-100"></span>
+        </div>
+
+        <input
+            class="cursor-pointer shadow-2xl tracking-wider gradiant w-2/4 p-4 m-4 m-auto rounded-full text-xl text-white"
+            type="submit" value="Valider">
+    </form>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
